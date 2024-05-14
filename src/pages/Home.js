@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import WorkoutDetails from '../components/WorkoutDetails';
 
+
 function Home() {
     const [workouts, setWorkouts] = useState(null);
 
@@ -15,7 +16,9 @@ function Home() {
             }
         }
         fetchWorkouts()
-    }, [workouts])
+    }, [workouts]);
+    
+    
 
     return (
         <div className='home'>
