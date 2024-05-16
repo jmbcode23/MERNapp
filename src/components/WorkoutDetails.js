@@ -1,7 +1,7 @@
 import React from 'react';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
-import { DeleteOutlined } from '@ant-design/icons';
-import { message } from 'antd';
+import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
+import { Typography, message } from 'antd';
 import { Link } from 'react-router-dom';
 
 function WorkoutDetails({ workout }) {
@@ -31,6 +31,7 @@ function WorkoutDetails({ workout }) {
             </Link>
             {/* <span onClick={handleClick}>Delete</span> */}
             <DeleteOutlined onClick={handleClick} />
+            <Typography.Text style={{marginTop:15, right:0}}><EditOutlined style={{color:"blue"}}/></Typography.Text>
         </div>
     )
 };
